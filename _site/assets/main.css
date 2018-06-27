@@ -415,11 +415,21 @@
   padding-right: 24px;
   padding-left: 24px;
   margin-bottom: 8px; }
+  .prototype .content-box p {
+    margin-top: 16px;
+    margin-bottom: 16px; }
+  .prototype .content-box ul {
+    padding-left: 0; }
+  .prototype .content-box li {
+    margin-bottom: 32px; }
   @media (min-width: 768px) {
     .prototype .content-box {
       padding-right: 32px;
       padding-left: 32px;
-      margin-bottom: 16px; } }
+      margin-bottom: 16px; }
+      .prototype .content-box p {
+        margin-top: 32px;
+        margin-bottom: 32px; } }
 .prototype .release-data {
   display: inline-block; }
   .prototype .release-data p {
