@@ -128,7 +128,7 @@ title: "GDP monthly estimate, UK: March 2018"
           <p>This is the lowest three-month growth since Quarter 4 (Oct to Dec) 2012.</p>
 
           <details role="group" class="margin-bottom--4 margin-top--1">
-            <summary role="button" aria-controls="details-content-1" aria-expanded="true">
+            <summary id="reveal1" role="button" aria-controls="details-content-1" aria-expanded="true">
               <span class="summary">Construction pulls overall GDP down
             </summary>
             <div class="panel" id="details-content-1" aria-hidden="false">
@@ -137,7 +137,9 @@ title: "GDP monthly estimate, UK: March 2018"
               <div id="chart1" class="margin-top--6"></div>
               <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
               <script>
-              var pymParent = new pym.Parent('chart1', "https://www.ons.gov.uk/embed?uri=/economy/grossdomesticproductgdp/bulletins/secondestimateofgdp/januarytomarch2018/86d33913", {});
+              document.getElementById("reveal1").addEventListener("click", function(){
+                  var pymParent = new pym.Parent("chart1", "https://www.ons.gov.uk/embed?uri=/economy/grossdomesticproductgdp/bulletins/secondestimateofgdp/januarytomarch2018/86d33913", {})
+                  });
               </script>
 
               <p class="heading-xsmall">Source: Office for National Statistics</p>
