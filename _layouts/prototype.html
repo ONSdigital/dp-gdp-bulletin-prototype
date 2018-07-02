@@ -20,6 +20,10 @@
 
     {{ content }}
 
+    {% if page.warning != false %}
+      {% include banners/footer-banner.html %}
+    {% endif %}
+
     {% if page.footer != false %}
       {% include footer.html %}
     {% endif %}

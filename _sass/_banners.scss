@@ -1,6 +1,15 @@
 .banner__tag {
-  padding: 2px 7px 3px;
+  padding: 5px 8px;
+  margin-right: 8px;
   text-transform: uppercase;
   color: $white;
-  background-color: $thunder;
+  background-color: $ship-grey;
+}
+
+.banner-left {
+  display: inline-block;
+}
+
+.banner-right {
+  float: right;
 }
