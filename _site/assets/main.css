@@ -280,8 +280,9 @@
     position: sticky;
     top: 0; } }
 .prototype .banner__tag {
+  display: inline-block;
   padding: 5px 8px;
-  margin-right: 8px;
+  margin-right: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #414042; }
@@ -289,6 +290,10 @@
   display: inline-block; }
 .prototype .banner-right {
   float: right; }
+.prototype .banner-content {
+  display: table; }
+.prototype .banner-text {
+  display: table-cell; }
 .prototype .breadcrumb {
   border-bottom: none;
   padding: 0; }
