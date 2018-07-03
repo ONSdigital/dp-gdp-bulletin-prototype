@@ -43,11 +43,11 @@
 		<div class="col-wrap prototype padding-top--1 padding-bottom--1">
 
 			<div class="col col--md-three-quarters col--lg-three-quarters">
-				<p class="margin-bottom--0 font-xsmall"><strong class="banner__tag">Beta</strong> This is a new way of getting data – your <a href="#" class="astral-link font-xsmall">feedback</a> will help us to improve it.</p>
+				<p class="margin-bottom--0 font-xsmall"><strong class="banner__tag">alpha</strong> This is a new way of getting data – your <a href="#" class="astral-link font-xsmall">feedback</a> will help us to improve it.</p>
 			</div>
 
 			<div class="col col--md-one-quarter col--lg-one-quarter" style="text-align: right;">
-					<a href="#" class="astral-link font-xsmall">Exit beta</a>
+					<a href="#" class="astral-link font-xsmall">View original</a>
 			</div>
 
 		</div>
@@ -148,11 +148,15 @@
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col col--md-two-thirds col--lg-two-thirds background--white margin-bottom--4">
-          <div id="headingChart" class="padding-top--4"></div>
+          <p class="heading-small padding-left--2">UK GDP grew by 0.1% in the three months to March</p>
+          <p class="font-xsmall padding-left--2">GDP growth, quarter-on-quarter and three-month on three-month</p>
+          <div id="headingChart"></div>
+
           <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
           <script>
             var pymParent = new pym.Parent('headingChart', "https://www.ons.gov.uk/embed?uri=/economy/grossdomesticproductgdp/bulletins/secondestimateofgdp/januarytomarch2018/86d33913", {});
             </script>
+            <p class="font-xxsmall margin-bottom--3 padding-left--2">Source: Office for National Statistics</p>
           <!-- <div class="padding-right--2 padding-bottom--0 padding-left--2">
             <p class="heading-small">UK GDP grew by 0.1% in the three months to March</p>
             <p class="font-xsmall">GDP growth, quarter-on-quarter and three-month on three-month</p>
@@ -211,8 +215,7 @@
             <div class="panel" id="details-content-1" aria-hidden="false">
               <p class="font-xsmall">Contribution to growth</p>
               <!-- <img style="width:100%" src="/dp-gdp-bulletin-prototype/assets/img/charts/weapons_firearm_chart_lg.png" class="" alt=""> -->
-              <div id="chart1" class="margin-top--6"></div>
-              <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+              <div id="chart1"></div>
               <script>
               document.getElementById("reveal1").addEventListener("click", function(){
                   var pymParent = new pym.Parent("chart1", "https://www.ons.gov.uk/embed?uri=/economy/grossdomesticproductgdp/bulletins/secondestimateofgdp/januarytomarch2018/86d33913", {})
@@ -238,12 +241,18 @@
           </details>
 
           <details role="group" class="margin-bottom--4 margin-top--1">
-            <summary role="button" aria-controls="details-content-1" aria-expanded="true">
+            <summary id="reveal2" role="button" aria-controls="details-content-1" aria-expanded="true">
               <span class="summary">Rolling three-month output growth slowed
             </summary>
             <div class="panel" id="details-content-1" aria-hidden="false">
               <p class="font-xsmall">GDP growth, three-month on three-month</p>
-              <img style="width:100%" src="/dp-gdp-bulletin-prototype/assets/img/charts/weapons_firearm_chart_lg.png" class="" alt="">
+              <!-- <img style="width:100%" src="/dp-gdp-bulletin-prototype/assets/img/charts/weapons_firearm_chart_lg.png" class="" alt=""> -->
+              <div id="chart2"></div>
+              <script>
+              document.getElementById("reveal2").addEventListener("click", function(){
+                  var pymParent = new pym.Parent("chart2", "https://www.ons.gov.uk/embed?uri=/economy/grossdomesticproductgdp/bulletins/secondestimateofgdp/januarytomarch2018/86d33913", {})
+                  });
+              </script>
               <p class="font-xsmall">Source: Office for National Statistics</p>
               <h5 class="margin-bottom--1">Download this chart</h5>
               <div class="btn-group margin-bottom--4">
@@ -263,7 +272,7 @@
           </details>
 
           <details role="group" class="margin-bottom--4 margin-top--1">
-            <summary role="button" aria-controls="details-content-1" aria-expanded="true">
+            <summary id="reveal3" role="button" aria-controls="details-content-1" aria-expanded="true">
               <span class="summary">GDP was flat in March
             </summary>
             <div class="panel" id="details-content-1" aria-hidden="false">
@@ -323,12 +332,18 @@
           </details>
 
           <details role="group" class="margin-bottom--4 margin-top--1">
-            <summary role="button" aria-controls="details-content-1" aria-expanded="true">
+            <summary id="reveal4" role="button" aria-controls="details-content-1" aria-expanded="true">
               <span class="summary">Services industries grew by 0.3% in January to March compared with October to December
             </summary>
             <div class="panel" id="details-content-1" aria-hidden="false">
               <p class="font-xsmall">Growth, quarter on a year earlier</p>
-              <img style="width:100%" src="/dp-gdp-bulletin-prototype/assets/img/charts/weapons_firearm_chart_lg.png" class="" alt="">
+              <!-- <img style="width:100%" src="/dp-gdp-bulletin-prototype/assets/img/charts/weapons_firearm_chart_lg.png" class="" alt=""> -->
+              <div id="chart4"></div>
+              <script>
+              document.getElementById("reveal4").addEventListener("click", function(){
+                  var pymParent = new pym.Parent("chart4", "https://www.ons.gov.uk/embed?uri=/economy/grossdomesticproductgdp/bulletins/secondestimateofgdp/januarytomarch2018/86d33913", {})
+                  });
+              </script>
               <p class="font-xsmall">Source: Office for National Statistics</p>
               <h5 class="margin-bottom--1">Download this chart</h5>
               <div class="btn-group margin-bottom--4">
@@ -347,12 +362,18 @@
           </details>
 
           <details role="group" class="margin-bottom--4 margin-top--1">
-            <summary role="button" aria-controls="details-content-1" aria-expanded="true">
+            <summary id="reveal5" role="button" aria-controls="details-content-1" aria-expanded="true">
               <span class="summary">Production increased by 0.7%, lead by mining and quarrying and a cold weather boost to energy production
             </summary>
             <div class="panel" id="details-content-1" aria-hidden="false">
               <p class="font-xsmall">Growth, quarter- on- quarter and three-month on three-month</p>
-              <img style="width:100%" src="/dp-gdp-bulletin-prototype/assets/img/charts/weapons_firearm_chart_lg.png" class="" alt="">
+              <!-- <img style="width:100%" src="/dp-gdp-bulletin-prototype/assets/img/charts/weapons_firearm_chart_lg.png" class="" alt=""> -->
+              <div id="chart5"></div>
+              <script>
+              document.getElementById("reveal5").addEventListener("click", function(){
+                  var pymParent = new pym.Parent("chart5", "https://www.ons.gov.uk/embed?uri=/economy/grossdomesticproductgdp/bulletins/secondestimateofgdp/januarytomarch2018/86d33913", {})
+                  });
+              </script>
               <p class="font-xsmall">Source: Office for National Statistics</p>
               <h5 class="margin-bottom--1">Download this chart</h5>
               <div class="btn-group margin-bottom--4">
@@ -372,12 +393,18 @@
           </details>
 
           <details role="group" class="margin-bottom--4 margin-top--1">
-            <summary role="button" aria-controls="details-content-1" aria-expanded="true">
+            <summary id="reveal6" role="button" aria-controls="details-content-1" aria-expanded="true">
               <span class="summary">Snow in late February and early March affected construction and retail
             </summary>
             <div class="panel" id="details-content-1" aria-hidden="false">
               <p class="font-xsmall">Index</p>
-              <img style="width:100%" src="/dp-gdp-bulletin-prototype/assets/img/charts/weapons_firearm_chart_lg.png" class="" alt="">
+              <!-- <img style="width:100%" src="/dp-gdp-bulletin-prototype/assets/img/charts/weapons_firearm_chart_lg.png" class="" alt=""> -->
+              <div id="chart6"></div>
+              <script>
+              document.getElementById("reveal6").addEventListener("click", function(){
+                  var pymParent = new pym.Parent("chart6", "https://www.ons.gov.uk/embed?uri=/economy/grossdomesticproductgdp/bulletins/secondestimateofgdp/januarytomarch2018/86d33913", {})
+                  });
+              </script>
               <p class="font-xsmall">Source: Office for National Statistics</p>
               <h5 class="margin-bottom--1">Download this chart</h5>
               <div class="btn-group margin-bottom--4">
@@ -528,11 +555,11 @@
 		<div class="col-wrap background--astral prototype padding-top--2 padding-right--1 padding-bottom--2 padding-left--1">
 
 			<div class="banner-left">
-				<p class="margin-bottom--0 font-xsmall"><strong class="banner__tag">Beta</strong> This is a new way of getting data – your <a href="#" class="astral-link font-xsmall">feedback</a> will help us to improve it.</p>
+				<p class="margin-bottom--0 font-xsmall"><strong class="banner__tag">alpha</strong> This is a new way of getting data – your <a href="#" class="astral-link font-xsmall">feedback</a> will help us to improve it.</p>
 			</div>
 
 			<div class="banner-right">
-					<a href="#" class="astral-link font-xsmall">Exit beta</a>
+					<a href="#" class="astral-link font-xsmall">View original</a>
 			</div>
 
 		</div>
