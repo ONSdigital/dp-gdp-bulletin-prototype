@@ -70,12 +70,17 @@ title: "GDP monthly estimate, UK: March 2018"
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col col--md-two-thirds col--lg-two-thirds background--white margin-bottom--4">
-          <div class="padding-right--2 padding-bottom--0 padding-left--2">
+          <div id="headingChart" class="padding-top--4"></div>
+          <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+          <script>
+            var pymParent = new pym.Parent('headingChart', "https://www.ons.gov.uk/embed?uri=/economy/grossdomesticproductgdp/bulletins/secondestimateofgdp/januarytomarch2018/86d33913", {});
+            </script>
+          <!-- <div class="padding-right--2 padding-bottom--0 padding-left--2">
             <p class="heading-small">UK GDP grew by 0.1% in the three months to March</p>
             <p class="font-xsmall">GDP growth, quarter-on-quarter and three-month on three-month</p>
             <img style="width:100%" src="{{ "/assets/img/charts/weapons-highlight-1-lg.png" | relative_url }}" class="margin-bottom--3" alt="">
             <p class="font-xxsmall margin-bottom--3">Source: Office for National Statistics</p>
-          </div>
+          </div> -->
         </div>
         <div class="col col--md-one-third col--lg-one-third padding-left-md--3">
           <blockquote class="header-quote">
