@@ -1,16 +1,8 @@
-# Digital Publishing Design Manual
+# Digital Publishing GDP bulletin prototype
 
 ## Getting started
 
-- Get a GitHub account
-- Install [GitHub desktop](https://desktop.github.com/)
-- Download/clone this repo using GitHub desktop
-- Open Terminal
-- Install [Jekyll](https://jekyllrb.com/)
-- Run Jekyll
-- Open this repo in a [code editor](https://atom.io/)
-
-Stuck? Ask Benjy for help.
+This is a prototype of the ONS website, it's built using Jekyll and adds prototype styles on top of the ONS website CSS and JS.
 
 ## License
 
